@@ -26,7 +26,7 @@
     />
     <!-- Custom style -->
     
-    <link rel="stylesheet" href="/project-twenty-team/assets/index-21540bb7.css">
+    <link rel="stylesheet" href="/project-twenty-team/assets/index-a1a73356.css">
   </head>
   <body>
     <header class="header">
@@ -63,8 +63,8 @@
 
       <button
         class="menu-burger js-open-menu"
-        type="button"
-        aria-label="open-menu-burger"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <svg class="icon-burger" width="32" height="22">
           <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-nav"></use>
@@ -72,7 +72,7 @@
       </button>
     </nav>
 
-    <a class="btn-sign-up" type="button" href="#sign-up">SIGN UP</a>
+    <a class="btn-sign-up" href="#sign-up">SIGN UP</a>
   </div>
 </header>
 <!-- Mobile menu -->
@@ -531,7 +531,7 @@
               width="56"
               height="56"
               srcset="/project-twenty-team/assets/userreviews@1x_result-b607122a.png 1x, /project-twenty-team/assets/userreviews@2x_result-065f1696.png 2x"
-              src=".\img\userreviews@1x_result.png"
+              src="/project-twenty-team/assets/userreviews@1x_result-b607122a.png"
               alt="reviews-foto-man"
             />
             <div class="reviews-student">
@@ -582,7 +582,7 @@
             <img
               class="reviews-foto"
               srcset="/project-twenty-team/assets/userreviews@1x-1_result-16868816.png 1x, /project-twenty-team/assets/userreviews@2x-1_result-08b418da.png 2x"
-              src=".\img\userreviews@1x-1_result.png"
+              src="/project-twenty-team/assets/userreviews@1x-1_result-16868816.png"
               alt="reviews-foto-man"
             />
             <div class="reviews-student">
@@ -632,78 +632,103 @@
     </main>
     <!-- Footer -->
 <section class="footer" id="contacts">
-    <div class="container footer-wrapper">
-        
-        <div class="footer-inside-wrapper">
+  <div class="container footer-wrapper">
+    <div class="footer-inside-wrapper">
+      <div class="footer-logo-wrapper">
+        <a class="logo-footer-link" href="/index.html"
+          ><svg class="logo-footer-icon" width="127" height="20">
+            <use href="/project-twenty-team/assets/icons-92a2417d.svg#logo"></use></svg
+        ></a>
 
-            <div class="footer-logo-wrapper">
+        <address class="footer-contacts">
+          <a class="footer-contacts-link" href="tel:+380665438912"
+            >UA: +38 066 543 8912<br
+          /></a>
+          <a
+            class="footer-contacts-link"
+            href="https://maps.app.goo.gl/qrSqHf4Gey79KYae9"
+          >
+            Ukraine, Kyiv</a
+          >
+        </address>
+      </div>
 
-                <svg class="logo-footer" width="127" height="20" area-label="footer logo">
-                    <use href="/project-twenty-team/assets/icons-92a2417d.svg#logo"></use>
-                </svg>
+      <div class="footer-block-menu">
+        <ul class="footer-social-networks">
+          <li class="footer-items">
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              rel="noreferrer"
+              >INSTAGRAM</a
+            >
+          </li>
+          <li class="footer-items">
+            <a
+              class="footer-social-link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              rel="noreferrer"
+              >FACEBOOK</a
+            >
+          </li>
+          <li class="footer-items">
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              rel="noreferrer"
+              >YOUTUBE</a
+            >
+          </li>
+        </ul>
 
-                <address class="footer-contacts">
-                <a class="footer-contacts-link" href="tel:+380665438912">UA: +38 066 543 8912<br /></a>
-                <a class="footer-contacts-link" href="https://maps.app.goo.gl/qrSqHf4Gey79KYae9"> Ukraine, Kyiv</a>
-                       </address>
-            </div>
-            
-                <div class="footer-block-menu">
-            
-                <ul class="footer-social-networks">
-            <li class="footer-items">
-                <a class="footer-social-link" href="https://www.instagram.com/goitclub/" target="_blank"  rel="noreferrer">INSTAGRAM</a>
-            </li>
-            <li class="footer-items">
-                <a class="footer-social-link" href="https://www.facebook.com/goITclub/" target="_blank"  rel="noreferrer">FACEBOOK</a>
-            </li>
-            <li class="footer-items">
-                <a class="footer-social-link" href="https://www.youtube.com/c/GoIT" target="_blank"  rel="noreferrer">YOUTUBE</a>
-            </li>
-                </ul>
-            
-                <ul class="footer-menu-list">
-            <li class="footer-menu-items">
-                <a class="footer-menu-link" href="#about">ABOUT US</a>
-            </li>
-            <li class="footer-menu-items">
-                <a class="footer-menu-link" href="#courses">OUR COURSES</a>
-            </li>
-            <li class="footer-menu-items">
-                <a class="footer-menu-link" href="#mentors">OUR MENTORS</a>
-            </li>
-            <li class="footer-menu-items">
-                <a class="footer-menu-link" href="#reviews">REVIEWS</a>
-            </li>
-            <li class="footer-menu-items">
-                <a class="footer-menu-link" href="#contacts">CONTACTS</a>
-            </li>
-                </ul>
-                </div>
-            
-                <form class="footer-form">
-            <input class="footer-form-input" type="text" name="your-email" placeholder="Enter your email" pattern = "[A-Za-z0-9]{6,}" />
-            <button class="footer-btn" type="submit">Go</button>
-                </form>
-        </div>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-items">
+            <a class="footer-menu-link" href="#about">ABOUT US</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-link" href="#courses">OUR COURSES</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-link" href="#mentors">OUR MENTORS</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-link" href="#reviews">REVIEWS</a>
+          </li>
+          <li class="footer-menu-items">
+            <a class="footer-menu-link" href="#contacts">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="footer-inform-items">
-
-            <div class="footer-policy-wrapper">
-
-                <p class="footer-policy">Privacy Policy</p>
-                <p class="footer-policy">Public Offering Agreement</p>
-            </div>
-
-            <div class="footer-policy-wrapper">
-
-                    <p class="footer-policy">2023 Focus Frame</p>
-                    <p class="footer-policy"> © All rights reserved</p>
-                </p>
-            </div>
-        </div>
+      <form class="footer-form">
+        <input
+          class="footer-form-input"
+          type="text"
+          name="your-email"
+          placeholder="Enter your email"
+          pattern="[A-Za-z0-9]{6,}"
+        />
+        <button class="footer-btn" type="submit">Go</button>
+      </form>
     </div>
+
+    <div class="footer-inform-items">
+      <div class="footer-policy-wrapper">
+        <p class="footer-policy">Privacy Policy</p>
+        <p class="footer-policy">Public Offering Agreement</p>
+      </div>
+
+      <div class="footer-policy-wrapper">
+        <p class="footer-policy">2023 Focus Frame</p>
+        <p class="footer-policy">© All rights reserved</p>
+      </div>
+    </div>
+  </div>
 </section>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -711,6 +736,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script defer src="/main.js"></script>
+    <script defer src="./js/js-open-menu.js"></script>
   </body>
 </html>
