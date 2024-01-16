@@ -26,7 +26,7 @@
     />
     <!-- Custom style -->
     
-    <link rel="stylesheet" href="/project-twenty-team/assets/index-b1f09be0.css">
+    <link rel="stylesheet" href="/project-twenty-team/assets/index-f728d76b.css">
   </head>
   <body>
     <header class="header">
@@ -34,7 +34,7 @@
     <nav class="nav-header">
       <a href="">
         <svg class="logo-header" width="127" height="20">
-          <use href="/project-twenty-team/assets/icons-9825e3e7.svg#logo"></use>
+          <use href="/project-twenty-team/assets/icons-92a2417d.svg#logo"></use>
         </svg>
       </a>
       <ul class="list-nav">
@@ -55,33 +55,36 @@
         </li>
       </ul>
 
-      <button class="btn-camera">
-        <a class="link-camera-header" href="#sign-up">
-          <svg class="icon-camera" width="16" height="16">
-            <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-bi_camera-fill"></use>
-          </svg>
-        </a>
-      </button>
-      <button class="menu-burger" type="button" aria-label="open-menu-burger">
+      <a class="btn-camera" href="#sign-up">
+        <svg class="icon-camera" width="16" height="16">
+          <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-bi_camera-fill"></use>
+        </svg>
+      </a>
+
+      <button
+        class="menu-burger js-open-menu"
+        type="button"
+        aria-label="open-menu-burger"
+      >
         <svg class="icon-burger" width="32" height="22">
-          <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-nav"></use>
+          <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-nav"></use>
         </svg>
       </button>
     </nav>
 
-    <button class="btn-sign-up" type="button" href="#sign-up">SIGN UP</button>
+    <a class="btn-sign-up" type="button" href="#sign-up">SIGN UP</a>
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="mobile-menu" style="display: none">
-  <button class="menu-btn" type="button">
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-btn js-close-menu" type="button">
     <svg class="menu-btn-icon" width="32" height="32">
       <use href="../img/icons.svg#icon-x"></use>
     </svg>
   </button>
   <ul class="mobile-menu-list">
     <li class="mobile-menu-item">
-      <a class="mobile-menu-link active" href="#about">About us</a>
+      <a class="mobile-menu-link" href="#about">About us</a>
     </li>
     <li class="mobile-menu-item">
       <a class="mobile-menu-link" href="#courses">Our courses</a>
@@ -204,11 +207,10 @@
         </ul>
 
         <div class="hero-link-wraper">
-          <a href="" class="hero-link-revies">Our happy students </a
-          ><span class="hero-icon-wraper"
-            ><svg class="hero-link-icon" width="18" height="10">
-              <use href="/project-twenty-team/assets/icons-9825e3e7.svg#arrow-stroke"></use></svg
-          ></span>
+          <a href="#reviews" class="hero-link-revies">Our happy students </a
+          ><svg class="hero-link-icon" width="18" height="10">
+            <use href="/project-twenty-team/assets/icons-92a2417d.svg#arrow-stroke"></use>
+          </svg>
         </div>
       </div>
       <div class="hero-revies-wraper">
@@ -241,7 +243,7 @@
     </h2>
   </div>
 </section>
-      <section class="about-us-section section">
+      <section class="about-us-section section" id="about">
   <div class="container">
     <h2 class="about-us-title">About <span class="accent">Us</span></h2>
     <div class="about-content">
@@ -295,7 +297,7 @@
   </div>
 </section>
 
-      <section class="section section-our-courses">
+      <section class="section section-our-courses" id="courses">
   <div class="container">
     <div class="courses-dacr">
       <h2 class="courses-header">Our <span class="accent">Courses</span></h2>
@@ -310,10 +312,7 @@
         <div class="courses-card-link-box">
           <a class="courses-list-link" href="#reviews-section" target="_blank">
             <svg class="courses-card-icon" width="20" height="20">
-
-              <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-arrow-narrow-up-right"></use>
-
-      
+              <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -327,9 +326,7 @@
         <div class="courses-card-link-box">
           <a class="courses-list-link" href="#reviews-section" target="_blank">
             <svg class="courses-card-icon" width="20" height="20">
-
-              <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-arrow-narrow-up-right"></use>
-
+              <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -343,9 +340,7 @@
         <div class="courses-card-link-box">
           <a class="courses-list-link" href="#reviews-section" target="_blank">
             <svg class="courses-card-icon" width="20" height="20">
-
-              <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-arrow-narrow-up-right"></use>
-
+              <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -359,10 +354,10 @@
   </div>
 </section>
 
-      <section class="our-mentors-section">
+      <section class="our-mentors-section section" id="mentors">
   <div class="container mentors-wrapper">
     <h2 class="our-mentors-title">Our <span class="accent">Mentors</span></h2>
-    <ul class="description-list">
+    <ul class="description-list gallery">
       <li class="list-our-mentors">
         <div class="mentors-img-adapt">
           <picture class="mentors-picture">
@@ -373,7 +368,7 @@
             <img
               class="mentors-item-img"
               src="/project-twenty-team/assets/girl-1our-mentors@1x_result-dca8463c.png"
-              alt="img-our-mentors"
+              alt="Emilia Smith"
               width="180"
               height="180"
             />
@@ -394,7 +389,7 @@
             <img
               class="mentors-item-img"
               src="./img/boy-1our-mentors@1x_result.jpg"
-              alt="img-our-mentors"
+              alt="Alex Lebedev"
               width="180"
               height="180"
             />
@@ -405,7 +400,7 @@
           <p class="mentors-item-text">3.5 years of experience</p>
         </div>
       </li>
-      <li class="list-our-mentors mentors-element">
+      <li class="list-our-mentors">
         <div class="mentors-img-adapt">
           <picture class="mentors-picture">
             <source
@@ -415,14 +410,14 @@
             <img
               class="mentors-item-img"
               src="/project-twenty-team/assets/girl-2our-mentors@1x_result-e71813e5.png"
-              alt="img-our-mentors"
+              alt="Mia Dubrovska"
               width="180"
               height="180"
             />
           </picture>
         </div>
         <div class="mentors-item">
-          <h3 class="mentors-item-name mentors-element">Mia Dubrovska</h3>
+          <h3 class="mentors-item-name">Mia Dubrovska</h3>
           <p class="mentors-item-text">2.0 years of experience</p>
         </div>
       </li>
@@ -436,7 +431,7 @@
             <img
               class="mentors-item-img"
               src="../img/boy-2our-mentors@1x_result.png"
-              alt="img-our-mentors"
+              alt="Eliot Kovalev"
               width="180"
               height="180"
             />
@@ -524,7 +519,7 @@
   </div>
 </section>
 
-      <section class="reviews-section section">
+      <section class="reviews-section section" id="reviews">
   <div class="reviews-container container">
     <h2 class="reviews-section-name">Reviews</h2>
     <ul class="reviews-list">
@@ -547,27 +542,27 @@
           <ul class="reviews-stars-list">
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -598,27 +593,27 @@
           <ul class="reviews-stars-list">
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
             <li class="reviews-stars">
               <svg class="reviews-star" width="16" height="16">
-                <use href="/project-twenty-team/assets/icons-9825e3e7.svg#icon-star"></use>
+                <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-star"></use>
               </svg>
             </li>
           </ul>
@@ -636,7 +631,7 @@
 
     </main>
     <!-- Footer -->
-<section class="footer">
+<section class="footer" id="contacts">
     <div class="container footer-wrapper">
         
         <div class="footer-inside-wrapper">
@@ -644,7 +639,7 @@
             <div class="footer-logo-wrapper">
 
                 <svg class="logo-footer" width="127" height="20" area-label="footer logo">
-                    <use href="../img/icons.svg#logo"></use>
+                    <use href="/project-twenty-team/assets/icons-92a2417d.svg#logo"></use>
                 </svg>
 
                 <address class="footer-contacts">
@@ -709,5 +704,13 @@
     </div>
     </div>
 </section>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/js-open-menu.js"></script>
   </body>
 </html>
