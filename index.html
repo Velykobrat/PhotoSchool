@@ -26,13 +26,14 @@
     />
     <!-- Custom style -->
     
-    <link rel="stylesheet" href="/project-twenty-team/assets/index-e845665c.css">
+    <script type="module" crossorigin src="/project-twenty-team/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/project-twenty-team/assets/index-a2cfb42e.css">
   </head>
   <body>
     <header class="header">
   <div class="container-header container">
     <nav class="nav-header">
-      <a href="/index.html">
+      <a href="./index.html">
         <svg class="logo-header" width="127" height="20">
           <use href="/project-twenty-team/assets/icons-92a2417d.svg#logo"></use>
         </svg>
@@ -310,7 +311,7 @@
     <ol class="courses-list">
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews-section" target="_blank">
+          <a class="courses-list-link" href="#reviews">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -324,7 +325,7 @@
       </li>
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews-section" target="_blank">
+          <a class="courses-list-link" href="#reviews">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -338,7 +339,7 @@
       </li>
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews-section" target="_blank">
+          <a class="courses-list-link" href="#reviews">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-92a2417d.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -491,15 +492,16 @@
             title="Please enter your message (up to 255 characters)"
           ></textarea>
         </div>
+        <button class="form-btn" type="submit">
+          <span class="send-text">Send</span>
+        </button>
+        <p class="privacy-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="privacy-policy-link" href="/privacy-policy"
+            >Privacy Policy</a
+          >, and allow Promodo to use this information for marketing purposes.
+        </p>
       </form>
-      <button class="form-btn" type="submit">
-        <span class="send-text">Send</span>
-      </button>
-      <p class="privacy-policy">
-        By clicking on “Send” button, you agree to our
-        <a class="privacy-policy-link" href="/privacy-policy">Privacy Policy</a>
-        , and allow Promodo to use this information for marketing purposes.
-      </p>
     </div>
     <div class="sign-up-laptop">
       <picture class="sign-up-picture">
@@ -736,6 +738,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script defer src="./js/js-open-menu.js"></script>
+    
   </body>
 </html>
