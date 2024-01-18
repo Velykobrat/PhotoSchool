@@ -27,7 +27,7 @@
     <!-- Custom style -->
     
     <script type="module" crossorigin src="/project-twenty-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-twenty-team/assets/index-68ab3ecc.css">
+    <link rel="stylesheet" href="/project-twenty-team/assets/index-9967a750.css">
   </head>
   <body>
     <header class="header">
@@ -242,8 +242,13 @@
       <span class="accent">Master</span> your photography
       <span class="accent">skills with us!</span>
     </h2>
+    <h2 class="advertisement-title">
+      <span class="accent">Master</span> your photography
+      <span class="accent">skills with us!</span>
+    </h2>
   </div>
 </section>
+
       <section class="about-us-section section" id="about">
   <div class="container">
     <h2 class="about-us-title">About <span class="accent">Us</span></h2>
@@ -311,7 +316,7 @@
     <ol class="courses-list">
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews">
+          <a class="courses-list-link" href="#sign-up">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-74e3bd13.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -325,7 +330,7 @@
       </li>
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews">
+          <a class="courses-list-link" href="#sign-up">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-74e3bd13.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -339,7 +344,7 @@
       </li>
       <li class="courses-list-item">
         <div class="courses-card-link-box">
-          <a class="courses-list-link" href="#reviews">
+          <a class="courses-list-link" href="#sign-up">
             <svg class="courses-card-icon" width="20" height="20">
               <use href="/project-twenty-team/assets/icons-74e3bd13.svg#icon-arrow-narrow-up-right"></use>
             </svg>
@@ -389,7 +394,7 @@
             />
             <img
               class="mentors-item-img"
-              src="./img/boy-1our-mentors@1x_result.jpg"
+              src="/project-twenty-team/assets/boy-1our-mentors@1x_result-17eba555.png"
               alt="Alex Lebedev"
               width="180"
               height="180"
@@ -462,10 +467,9 @@
             type="text"
             id="user-name"
             name="user-name"
-            required=""
+            required
             placeholder="Enter your name"
-            pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
-            title="Please enter at least 2 characters, only letters and spaces are allowed"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s\-]+"
           />
         </div>
         <div class="sign-up-wrapper">
@@ -474,22 +478,20 @@
             type="email"
             name="user-email"
             id="user-email"
-            required=""
+            required
             minlength="2"
             placeholder="Enter your email"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-            title="Please enter a valid email address"
           />
         </div>
         <div class="sign-up-wrapper">
           <textarea
-            class="form-field"
+            class="form-field sign-up-form-textarea"
             name="user-message"
             id="user-message"
-            required=""
+            required
             maxlength="255"
             placeholder="Message"
-            title="Please enter your message (up to 255 characters)"
           ></textarea>
         </div>
         <button class="form-btn" type="submit">
@@ -661,6 +663,8 @@
           <a
             class="footer-contacts-link"
             href="https://maps.app.goo.gl/qrSqHf4Gey79KYae9"
+            rel="noreferrer"
+            target="_blank"
           >
             Ukraine, Kyiv</a
           >
@@ -720,10 +724,11 @@
       <form class="footer-form">
         <input
           class="footer-form-input"
-          type="text"
-          name="your-email"
+          type="email"
+          name="email"
+          required
           placeholder="Enter your email"
-          pattern="[A-Za-z0-9]{6,}"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
         <button class="footer-btn" type="submit">Go</button>
       </form>
